@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  background-color: #2f4882;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+
+}
+
+.decoration {
+  position: absolute;
+  height: 100%;
+  width: 13%;
+  z-index: -2;
+  left: 0;
+}
+
+.decoration .component:nth-child(1) {
+  background-color: #a3d140;
+  width: 250%;
+  height: 60%;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+  position: absolute;
+}
+
+.decoration .component:nth-child(2) {
+  background-color: #1368d6;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 60% 100%, 0 100%);
+}
+
+.decoration .component:nth-child(3) {
+  background-color: #6199c7;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 10% 0, 90% 100%, 0 100%);
+  position: absolute;
+}
+
+.decoration .component:nth-child(4) {
+  background-color: #8a8a8a;
+  width: 120%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  clip-path: polygon(0 0, 0 0, 100% 100%, 0 100%);
+}
+
+.f-illustration-nav {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2f4882;
+  outline: 2px solid #7cad11;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.lines-container-nav {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.line-nav {
+  background-color: #fff;
+}
+
+.line-nav:nth-child(1) {
+  position: absolute;
+  top: 25%;
+  height: 5px;
+  width: 100%;
+}
+
+.lines-container-nav > div:nth-child(2) {
+  width: 5px;
+  height: 80%;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  transform: rotate(-20deg);
+}
+
+.lines-container-nav > div:nth-child(3) {
+  height: 5px;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+/* --------------- Fim da Navbar --------------- */
+
+#hero {
+  height: 80vh;
+  padding: 0 6rem;
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  margin-top: 50px;
+}
+
+.logo-header {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 4px 2px 1px #2f4882, 1px 1px 20px rgba(0, 0, 0, 1);
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.logo-subtext {
+  font-size: 50%;
+  display: block;
+  font-weight: 500;
+  color: #70914a;
+  letter-spacing: 5px;
+  text-shadow: none;
+}
+
+.logo-illustration {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #2f4882;
+  z-index: -1;
+  position: absolute;
+  bottom: -4%;
+  left: 75%;
+  outline: 5px solid #7cad11;
+  border: 3px solid #fff;
+  overflow: hidden;
+}
+
+.lines-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-line {
+  background-color: #fff;
+}
+
+.logo-line:nth-child(1) {
+  position: absolute;
+  bottom: 65%;
+  height: 20px;
+  width: 100%;
+}
+
+.logo-line:nth-child(2) {
+  width: 20px;
+  height: 120px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: rotate(-20deg);
+}
+
+.logo-line:nth-child(3) {
+  height: 20px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.hero-header {
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  color: #0a1329;
+  padding: 2rem 4rem;
+}
+
+/* ------------------ destaques ------------- */
+
+#destaques {
+  background-color: #a3d140;
+  color: #FFF;
+}
+
+.destaque-content {
+  background-color: #bbe266;
+  width: 100%;
+  height: 100%;
+}
+
+#destaques .row > div h3 {
+  font-size: 1.4em;
+}
+
+/* ---------- Features --------------- */
+
+.feature {
+  width: 100%;
+}
+
+.feature-text h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.feature-text p{
+  color: #919191;
+  font-size: 1.3em;
+}
+
+#cadeado {
+  width: 80%;
+}
+
+.feature:nth-child(2) {
+  background-color: #6199c7;
+  color: #FFF;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.feature:nth-child(2) p {
+  color: #FFF;
+  font-weight: 300;
+}
+
+/* --------------- Testimonials ---------------- */
+#testimonials {
+  background-color: #1368d6;
+  min-height: 600px;
+}
+
+.testimonial-img {
+  width: 7%;
+}
+
+.testimonial-text {
+  font-weight: 300;
+  color: #FFF;
+  letter-spacing: 2px;
+}
+
+.testimonial-person {
+  color: #FFF;
+}
+
+.carousel-content {
+  width: 80%;
+  height: 100%;
+}
