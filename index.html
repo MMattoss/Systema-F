@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg px-5">
+    <nav class="navbar navbar-expand-lg px-5 fixed-top">
       <div class="container-fluid">
         <a href="#" class="logo-container navbar-brand">
           <div class="logo-nav">
@@ -50,7 +50,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
+          <ul class="navbar-nav me-auto fs-5">
             <li class="nav-item mx-3">
               <a href="#" class="nav-link">A Empresa</a>
             </li>
@@ -65,7 +65,7 @@
       </div>
     </nav>
 
-    <div class="container-fluid d-flex flex-column gap-2 text-center" id="hero">
+    <section class="container-fluid d-flex flex-column gap-2 text-center justify-content-center" id="hero">
       <div class="decoration">
         <div class="component"></div>
         <div class="component"></div>
@@ -87,10 +87,10 @@
         </div>
       </div>
 
-      <h1 class="hero-header p-5">
+      <h1 id="hero-header" class="px-5 mt-4">
         Transforme a Gestão da Sua Empresa com o Nosso Poderoso Sistema ERP
       </h1>
-    </div>
+    </section>
 
     <section id="destaques" class="container-fluid text-center p-5">
       <div class="row g-4">
@@ -268,7 +268,125 @@
       </div>
     </section>
 
-    <footer></footer>
+    <section id="contato">
+      <form method="post" class="row p-5 g-5 container-fluid">
+        <div class="col-xl-4 col-lg-4 d-flex flex-column gap-4">
+          <h1 id="form-header">Se interessou? Entre em contato com a gente!</h1>
+          <img
+            src="images/mail-1454731_1280.png"
+            class="img-fluid"
+            id="form-img"
+            alt=""
+          />
+        </div>
+        <div class="col-xl-4 col-lg-4">
+          <textarea
+            class="form-control rounded-4 p-3 fs-4"
+            placeholder="Sua menssagem"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="col-xl-4 col-lg-4 d-flex flex-column gap-3">
+          <div class="data">
+            <label for="fName" class="form-label d-block">Nome: </label>
+            <input class="form-control" type="text" name="fName" id="fName" />
+          </div>
+          <div class="data">
+            <label for="lName" class="form-label d-block">Sobrenome: </label>
+            <input class="form-control" type="text" name="lName" id="lName" />
+          </div>
+          <div class="data">
+            <label for="assunto" class="form-label d-block">Assunto: </label>
+            <input
+              class="form-control"
+              type="text"
+              name="assunto"
+              id="assunto"
+            />
+          </div>
+          <div class="data">
+            <label for="email" class="form-label d-block">Email: </label>
+            <input class="form-control" type="email" name="email" id="email" />
+          </div>
+
+          <button type="submit" class="btn btn-lg btn-outline-primary">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="container-fluid p-5 g-5">
+      <div class="row">
+        <div class="col d-flex flex-column gap-4">
+          <a href="#" class="footer-link">
+            <h5>
+              Sobre nós
+            </h5>
+          </a>
+          <a href="#" class="footer-link">
+            <h5>
+              Soluções
+            </h5>
+          </a>
+          <div class="contact-info">
+            <h5>Contato:</h5>
+            <em class="d-block mb-2">
+              Email: email@example.com
+            </em>
+            <em class="d-block mb-2">
+              <i class="fa-solid fa-phone"></i>
+              <span>+55 (81) 1234-5678</span>
+            </em>
+            <em class="d-block mb-2">
+              Endereço: Estrada do Encanamento, 12, Recife
+            </em>
+          </div>
+        </div>
+
+        <div class="col d-flex flex-column align-items-center gap-3">
+          <div class="logo-footer">
+            <div class="lines-footer">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="socials d-flex justify-content-evenly">
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram fa-2x social-icon"></i>
+            </a>
+
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fa-brands fa-linkedin-in fa-2x social-icon"></i>
+            </a>
+
+            <a
+              href="https://api.whatsapp.com/send?phone=551234567890"
+              target="_blank"
+            >
+              <i class="fa-brands fa-whatsapp fa-2x social-icon"></i>
+            </a>
+          </div>
+          <p id="copyright">© 2023 Systema F. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="col d-flex flex-column align-items-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.6244984603304!2d-34.917265726190266!3d-8.037593580257033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab194e22a895d9%3A0x23ca9ada8825d499!2sTrois%20Beaut%C3%A9%3A%20Sal%C3%A3o%20de%20Beleza%20Zona%20Norte%20Recife!5e0!3m2!1spt-BR!2sbr!4v1698944543034!5m2!1spt-BR!2sbr"
+            width="250"
+            height="250"
+            style="border: 0; border-radius: 1rem"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
