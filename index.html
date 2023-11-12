@@ -20,373 +20,387 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/logos.css">
+    <link rel="stylesheet" href="css/decoration.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/destaques.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/footer.css">
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg px-5 fixed-top">
-      <div class="container-fluid">
-        <a href="#" class="logo-container navbar-brand">
-          <div class="logo-nav">
-            <div class="f-illustration-nav">
-              <div class="lines-container-nav">
-                <div class="line-nav"></div>
-                <div class="line-nav"></div>
-                <div class="line-nav"></div>
+    <div class="website-container">
+      <nav class="navbar navbar-expand-lg px-3 px-md-4 px-lg-5 px-xl-5 px-xxl-5 fixed-top">
+        <div class="container-fluid">
+          <a href="#" class="logo-container navbar-brand">
+            <div class="logo-nav">
+              <div class="f-illustration-nav">
+                <div class="lines-container-nav">
+                  <div class="line-nav"></div>
+                  <div class="line-nav"></div>
+                  <div class="line-nav"></div>
+                </div>
+              </div>
+            </div>
+          </a>
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars fa-2x"></i>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto fs-5">
+              <li class="nav-item mx-3">
+                <a href="#" class="nav-link">A Empresa</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a href="#" class="nav-link">Soluções</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a href="#" class="nav-link">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <section class="container-fluid d-flex flex-column gap-2 text-center justify-content-center p-5" id="hero">
+        <div class="decoration d-none d-md-block">
+          <div class="component"></div>
+          <div class="component"></div>
+          <div class="component"></div>
+          <div class="component"></div>
+        </div>
+  
+        <div class="logo align-self-center pt-5 me-4 me-md-0">
+          <h1 class="logo-header">
+            SYSTEMA
+            <span class="logo-subtext">Solutions</span>
+          </h1>
+          <div class="logo-illustration">
+            <div class="lines-container">
+              <div class="logo-line"></div>
+              <div class="logo-line"></div>
+              <div class="logo-line"></div>
+            </div>
+          </div>
+        </div>
+  
+        <h1 id="hero-header" class="mt-4">
+          Transforme a Gestão da Sua Empresa com o Nosso Poderoso Sistema ERP
+        </h1>
+      </section>
+  
+      <section id="destaques" class="container-fluid text-center p-5">
+        <div class="row g-4">
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <article class="destaque-content p-4 rounded-4">
+              <i class="fas fa-cogs fa-5x mb-5"></i>
+              <h3 class="destaque-title">
+                Aumente a produtividade da sua equipe com automações inteligentes.
+              </h3>
+            </article>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <article class="destaque-content p-4 rounded-4">
+              <i class="fas fa-chart-simple fa-5x mb-5"></i>
+              <h3 class="destaque-title">
+                Tenha visibilidade total dos processos e operações em tempo real.
+              </h3>
+            </article>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <article class="destaque-content p-4 rounded-4">
+              <i class="fas fa-arrows-turn-to-dots fa-5x mb-5"></i>
+              <h3 class="destaque-title">
+                Adapte-se facilmente às mudanças do mercado com flexibilidade e
+                escalabilidade.
+              </h3>
+            </article>
+          </div>
+        </div>
+      </section>
+  
+      <section id="features" class="container-fluid g-0">
+        <!-- Feature 1 -->
+        <div class="feature row row-col-2 p-5 g-0">
+          <article
+            class="feature-text col-xl-6 col-lg-6 col-md-6 d-flex flex-column justify-content-center gap-3"
+          >
+            <h1>Flexibilidade para montar um ERP de acordo com o seu tamanho</h1>
+            <p>
+              Com uma gama robusta de funcionalidades, nossa plataforma é
+              projetada para atender às demandas de empresas de todos os portes e
+              setores.
+            </p>
+          </article>
+          <div class="feature-img col-xl-6 col-lg-6 col-md-6">
+            <img class="img-fluid" src="images/browser-3614768_1280.png" alt="" />
+          </div>
+        </div>
+  
+        <!-- Feature 2 -->
+        <div class="feature row row-col-2 p-5 g-0 d-flex flex-row-reverse">
+          <article
+            class="feature-text col-xl-6 col-lg-6 col-md-6 d-flex flex-column justify-content-center gap-3"
+          >
+            <h1>Liberdade de Acesso em Qualquer Lugar</h1>
+            <p>
+              Com o nosso Sistema ERP baseado na nuvem, você tem a liberdade de
+              gerenciar e monitorar as operações da sua empresa a partir de
+              qualquer dispositivo, em qualquer lugar. Seja no escritório, em casa
+              ou em trânsito, a nossa plataforma oferece acesso conveniente e sem
+              complicações, garantindo que você esteja sempre no controle.
+            </p>
+          </article>
+          <div class="feature-img col-xl-6 col-lg-6 col-md-6">
+            <img
+              class="img-fluid"
+              src="images/cloud-3406627_1280-removebg-preview.png"
+              alt=""
+            />
+          </div>
+        </div>
+  
+        <!-- Feature 3 -->
+        <div class="feature row row-col-2 px-5">
+          <article
+            class="feature-text col-xl-6 col-lg-6 col-md-6 d-flex flex-column justify-content-center gap-3"
+          >
+            <h1>Priorizamos Sua Segurança e Estabilidade</h1>
+            <p>
+              Implementamos medidas avançadas de segurança e redundância para
+              assegurar a integridade dos seus dados e a confiabilidade dos nossos
+              serviços. Com protocolos de segurança de ponta, nossa plataforma
+              mantém suas operações funcionando sem interrupções, proporcionando
+              tranquilidade e confiança total.
+            </p>
+          </article>
+          <div class="col-xl-6 col-lg-6 col-md-6 d-flex justify-content-center">
+            <img
+              class="img-fluid feature-img"
+              id="cadeado"
+              src="images/cloud-3865312_640.jpg"
+              alt="#"
+            />
+          </div>
+        </div>
+      </section>
+  
+      <section id="testimonials">
+        <div
+          id="carouselTestimonials"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner p-5">
+            <div
+              class="carousel-item active container-fluid p-3"
+              data-bs-interval="4000"
+            >
+              <div class="carousel-content mx-auto text-center">
+                <h2 class="testimonial-text mb-5">
+                  "O Sistema F transformou completamente a forma como gerenciamos
+                  nossos processos de negócios. A automação inteligente e a
+                  visibilidade em tempo real nos deram um controle sem precedentes
+                  sobre nossas operações. Além disso, a flexibilidade e
+                  escalabilidade do sistema nos permitiram nos adaptar rapidamente
+                  às mudanças do mercado. É uma solução verdadeiramente poderosa
+                  que impulsionou nossa produtividade e eficiência para novos
+                  patamares."
+                </h2>
+  
+                <img
+                  class="testimonial-img rounded-circle"
+                  src="images/profile-pic-3.jpg"
+                  alt="dog-profile"
+                />
+                <em class="d-block testimonial-person">Pedro Oliveira</em>
+                <em class="d-block testimonial-person">Gerente de TI</em>
+                <em class="d-block testimonial-person">InovaTech S.A.</em>
+              </div>
+            </div>
+  
+            <div
+              class="carousel-item container-fluid p-3"
+              data-bs-interval="4000"
+            >
+              <div class="carousel-content mx-auto text-center">
+                <h2 class="testimonial-text mb-5">
+                  "O Sistema F revolucionou nossos processos na Tech Innovations.
+                  Com automação inteligente e visibilidade em tempo real, ganhamos
+                  controle total sobre as operações. Sua flexibilidade e
+                  escalabilidade permitiram adaptação ágil às mudanças do mercado.
+                  Uma solução poderosa que elevou nossa produtividade e eficiência
+                  a novos patamares."
+                </h2>
+                <img
+                  class="testimonial-img rounded-circle"
+                  src="images/profile-pic-3.jpg"
+                  alt="dog-profile"
+                />
+                <em class="d-block">Joana Silva</em>
+                <em class="d-block">Diretora de Operações</em>
+                <em class="d-block">Tech Innovations Ltda.</em>
               </div>
             </div>
           </div>
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa fa-bars fa-2x"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto fs-5">
-            <li class="nav-item mx-3">
-              <a href="#" class="nav-link">A Empresa</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a href="#" class="nav-link">Soluções</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a href="#" class="nav-link">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <section class="container-fluid d-flex flex-column gap-2 text-center justify-content-center" id="hero">
-      <div class="decoration">
-        <div class="component"></div>
-        <div class="component"></div>
-        <div class="component"></div>
-        <div class="component"></div>
-      </div>
-
-      <div class="logo align-self-center pt-5">
-        <h1 class="logo-header">
-          SYSTEMA
-          <span class="logo-subtext">Solutions</span>
-        </h1>
-        <div class="logo-illustration">
-          <div class="lines-container">
-            <div class="logo-line"></div>
-            <div class="logo-line"></div>
-            <div class="logo-line"></div>
-          </div>
-        </div>
-      </div>
-
-      <h1 id="hero-header" class="px-5 mt-4">
-        Transforme a Gestão da Sua Empresa com o Nosso Poderoso Sistema ERP
-      </h1>
-    </section>
-
-    <section id="destaques" class="container-fluid text-center p-5">
-      <div class="row g-4">
-        <div class="col-xl-4 col-lg-4 col-md-4">
-          <article class="destaque-content p-4 rounded-4">
-            <i class="fas fa-cogs fa-5x mb-5"></i>
-            <h3 class="destaque-title">
-              Aumente a produtividade da sua equipe com automações inteligentes.
-            </h3>
-          </article>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-4">
-          <article class="destaque-content p-4 rounded-4">
-            <i class="fas fa-chart-simple fa-5x mb-5"></i>
-            <h3 class="destaque-title">
-              Tenha visibilidade total dos processos e operações em tempo real.
-            </h3>
-          </article>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-4">
-          <article class="destaque-content p-4 rounded-4">
-            <i class="fas fa-arrows-turn-to-dots fa-5x mb-5"></i>
-            <h3 class="destaque-title">
-              Adapte-se facilmente às mudanças do mercado com flexibilidade e
-              escalabilidade.
-            </h3>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="features" class="container-fluid g-0">
-      <!-- Feature 1 -->
-      <div class="feature row row-col-2 p-5 g-0">
-        <article
-          class="feature-text col-xl-6 col-lg-6 col-md-6 d-flex flex-column justify-content-center gap-3"
-        >
-          <h1>Flexibilidade para montar um ERP de acordo com o seu tamanho</h1>
-          <p>
-            Com uma gama robusta de funcionalidades, nossa plataforma é
-            projetada para atender às demandas de empresas de todos os portes e
-            setores.
-          </p>
-        </article>
-        <div class="feature-img col-xl-6 col-lg-6 col-md-6">
-          <img class="img-fluid" src="images/browser-3614768_1280.png" alt="" />
-        </div>
-      </div>
-
-      <!-- Feature 2 -->
-      <div class="feature row row-col-2 p-5 g-0 d-flex flex-row-reverse">
-        <article
-          class="feature-text col-xl-6 col-lg-6 col-md-6 d-flex flex-column justify-content-center gap-3"
-        >
-          <h1>Liberdade de Acesso em Qualquer Lugar</h1>
-          <p>
-            Com o nosso Sistema ERP baseado na nuvem, você tem a liberdade de
-            gerenciar e monitorar as operações da sua empresa a partir de
-            qualquer dispositivo, em qualquer lugar. Seja no escritório, em casa
-            ou em trânsito, a nossa plataforma oferece acesso conveniente e sem
-            complicações, garantindo que você esteja sempre no controle.
-          </p>
-        </article>
-        <div class="feature-img col-xl-6 col-lg-6 col-md-6">
-          <img
-            class="img-fluid"
-            src="images/cloud-3406627_1280-removebg-preview.png"
-            alt=""
-          />
-        </div>
-      </div>
-
-      <!-- Feature 3 -->
-      <div class="feature row row-col-2 px-5">
-        <article
-          class="feature-text col-xl-6 col-lg-6 col-md-6 d-flex flex-column justify-content-center gap-3"
-        >
-          <h1>Priorizamos Sua Segurança e Estabilidade</h1>
-          <p>
-            Implementamos medidas avançadas de segurança e redundância para
-            assegurar a integridade dos seus dados e a confiabilidade dos nossos
-            serviços. Com protocolos de segurança de ponta, nossa plataforma
-            mantém suas operações funcionando sem interrupções, proporcionando
-            tranquilidade e confiança total.
-          </p>
-        </article>
-        <div class="col-xl-6 col-lg-6 col-md-6 d-flex justify-content-center">
-          <img
-            class="img-fluid feature-img"
-            id="cadeado"
-            src="images/cloud-3865312_640.jpg"
-            alt="#"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonials">
-      <div
-        id="carouselTestimonials"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner p-5">
-          <div
-            class="carousel-item active container-fluid p-3"
-            data-bs-interval="4000"
+  
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselTestimonials"
+            data-bs-slide="prev"
           >
-            <div class="carousel-content mx-auto text-center">
-              <h2 class="testimonial-text mb-5">
-                "O Sistema F transformou completamente a forma como gerenciamos
-                nossos processos de negócios. A automação inteligente e a
-                visibilidade em tempo real nos deram um controle sem precedentes
-                sobre nossas operações. Além disso, a flexibilidade e
-                escalabilidade do sistema nos permitiram nos adaptar rapidamente
-                às mudanças do mercado. É uma solução verdadeiramente poderosa
-                que impulsionou nossa produtividade e eficiência para novos
-                patamares."
-              </h2>
-
-              <img
-                class="testimonial-img rounded-circle"
-                src="images/profile-pic-3.jpg"
-                alt="dog-profile"
-              />
-              <em class="d-block testimonial-person">Pedro Oliveira</em>
-              <em class="d-block testimonial-person">Gerente de TI</em>
-              <em class="d-block testimonial-person">InovaTech S.A.</em>
-            </div>
-          </div>
-
-          <div
-            class="carousel-item container-fluid p-3"
-            data-bs-interval="4000"
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselTestimonials"
+            data-bs-slide="next"
           >
-            <div class="carousel-content mx-auto text-center">
-              <h2 class="testimonial-text mb-5">
-                "O Sistema F revolucionou nossos processos na Tech Innovations.
-                Com automação inteligente e visibilidade em tempo real, ganhamos
-                controle total sobre as operações. Sua flexibilidade e
-                escalabilidade permitiram adaptação ágil às mudanças do mercado.
-                Uma solução poderosa que elevou nossa produtividade e eficiência
-                a novos patamares."
-              </h2>
-              <img
-                class="testimonial-img rounded-circle"
-                src="images/profile-pic-3.jpg"
-                alt="dog-profile"
-              />
-              <em class="d-block">Joana Silva</em>
-              <em class="d-block">Diretora de Operações</em>
-              <em class="d-block">Tech Innovations Ltda.</em>
-            </div>
-          </div>
-        </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselTestimonials"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselTestimonials"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-
-    <section id="contato">
-      <form method="post" class="row p-5 g-5 container-fluid">
-        <div class="col-xl-4 col-lg-4 d-flex flex-column gap-4">
-          <h1 id="form-header">Se interessou? Entre em contato com a gente!</h1>
-          <img
-            src="images/mail-1454731_1280.png"
-            class="img-fluid"
-            id="form-img"
-            alt=""
-          />
-        </div>
-        <div class="col-xl-4 col-lg-4">
-          <textarea
-            class="form-control rounded-4 p-3 fs-4"
-            placeholder="Sua menssagem"
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-        <div class="col-xl-4 col-lg-4 d-flex flex-column gap-3">
-          <div class="data">
-            <label for="fName" class="form-label d-block">Nome: </label>
-            <input class="form-control" type="text" name="fName" id="fName" />
-          </div>
-          <div class="data">
-            <label for="lName" class="form-label d-block">Sobrenome: </label>
-            <input class="form-control" type="text" name="lName" id="lName" />
-          </div>
-          <div class="data">
-            <label for="assunto" class="form-label d-block">Assunto: </label>
-            <input
-              class="form-control"
-              type="text"
-              name="assunto"
-              id="assunto"
-            />
-          </div>
-          <div class="data">
-            <label for="email" class="form-label d-block">Email: </label>
-            <input class="form-control" type="email" name="email" id="email" />
-          </div>
-
-          <button type="submit" class="btn btn-lg btn-outline-primary">
-            Enviar
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </form>
-    </section>
-
-    <footer class="container-fluid p-5 g-5">
-      <div class="row">
-        <div class="col d-flex flex-column gap-4">
-          <a href="#" class="footer-link">
-            <h5>
-              Sobre nós
-            </h5>
-          </a>
-          <a href="#" class="footer-link">
-            <h5>
-              Soluções
-            </h5>
-          </a>
-          <div class="contact-info">
-            <h5>Contato:</h5>
-            <em class="d-block mb-2">
-              Email: email@example.com
-            </em>
-            <em class="d-block mb-2">
-              <i class="fa-solid fa-phone"></i>
-              <span>+55 (81) 1234-5678</span>
-            </em>
-            <em class="d-block mb-2">
-              Endereço: Estrada do Encanamento, 12, Recife
-            </em>
+      </section>
+  
+      <section id="contato">
+        <form method="post" class="row p-5 g-5 container-fluid">
+          <div class="col-xl-4 col-lg-4 d-flex flex-column gap-4">
+            <h1 id="form-header">Se interessou? Entre em contato com a gente!</h1>
+            <img
+              src="images/mail-1454731_1280.png"
+              class="img-fluid"
+              id="form-img"
+              alt=""
+            />
           </div>
-        </div>
-
-        <div class="col d-flex flex-column align-items-center gap-3">
-          <div class="logo-footer">
-            <div class="lines-footer">
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="col-xl-4 col-lg-4">
+            <textarea
+              class="form-control rounded-4 p-3 fs-4"
+              placeholder="Sua menssagem"
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="col-xl-4 col-lg-4 d-flex flex-column gap-3">
+            <div class="data">
+              <label for="fName" class="form-label d-block">Nome: </label>
+              <input class="form-control" type="text" name="fName" id="fName" />
+            </div>
+            <div class="data">
+              <label for="lName" class="form-label d-block">Sobrenome: </label>
+              <input class="form-control" type="text" name="lName" id="lName" />
+            </div>
+            <div class="data">
+              <label for="assunto" class="form-label d-block">Assunto: </label>
+              <input
+                class="form-control"
+                type="text"
+                name="assunto"
+                id="assunto"
+              />
+            </div>
+            <div class="data">
+              <label for="email" class="form-label d-block">Email: </label>
+              <input class="form-control" type="email" name="email" id="email" />
+            </div>
+  
+            <button type="submit" class="btn btn-lg btn-outline-primary">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </section>
+  
+      <footer class="container-fluid p-5 g-5">
+        <div class="row">
+          <div class="col d-flex flex-column gap-4">
+            <a href="#" class="footer-link">
+              <h5>
+                Sobre nós
+              </h5>
+            </a>
+            <a href="#" class="footer-link">
+              <h5>
+                Soluções
+              </h5>
+            </a>
+            <div class="contact-info">
+              <h5>Contato:</h5>
+              <em class="d-block mb-2">
+                Email: email@example.com
+              </em>
+              <em class="d-block mb-2">
+                <i class="fa-solid fa-phone"></i>
+                <span>+55 (81) 1234-5678</span>
+              </em>
+              <em class="d-block mb-2">
+                Endereço: Estrada do Encanamento, 12, Recife
+              </em>
             </div>
           </div>
-          <div class="socials d-flex justify-content-evenly">
-            <a href="https://www.instagram.com" target="_blank">
-              <i class="fa-brands fa-instagram fa-2x social-icon"></i>
-            </a>
-
-            <a href="https://www.linkedin.com" target="_blank">
-              <i class="fa-brands fa-linkedin-in fa-2x social-icon"></i>
-            </a>
-
-            <a
-              href="https://api.whatsapp.com/send?phone=551234567890"
-              target="_blank"
-            >
-              <i class="fa-brands fa-whatsapp fa-2x social-icon"></i>
-            </a>
+  
+          <div class="col d-flex flex-column align-items-center gap-3">
+            <div class="logo-footer">
+              <div class="lines-footer">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="socials d-flex justify-content-evenly">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x social-icon"></i>
+              </a>
+  
+              <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin-in fa-2x social-icon"></i>
+              </a>
+  
+              <a
+                href="https://api.whatsapp.com/send?phone=551234567890"
+                target="_blank"
+              >
+                <i class="fa-brands fa-whatsapp fa-2x social-icon"></i>
+              </a>
+            </div>
+            <p id="copyright">© 2023 Systema F. Todos os direitos reservados.</p>
           </div>
-          <p id="copyright">© 2023 Systema F. Todos os direitos reservados.</p>
+  
+          <div class="col d-flex flex-column align-items-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.6244984603304!2d-34.917265726190266!3d-8.037593580257033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab194e22a895d9%3A0x23ca9ada8825d499!2sTrois%20Beaut%C3%A9%3A%20Sal%C3%A3o%20de%20Beleza%20Zona%20Norte%20Recife!5e0!3m2!1spt-BR!2sbr!4v1698944543034!5m2!1spt-BR!2sbr"
+              width="250"
+              height="250"
+              style="border: 0; border-radius: 1rem"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
+      </footer>
 
-        <div class="col d-flex flex-column align-items-center">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.6244984603304!2d-34.917265726190266!3d-8.037593580257033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab194e22a895d9%3A0x23ca9ada8825d499!2sTrois%20Beaut%C3%A9%3A%20Sal%C3%A3o%20de%20Beleza%20Zona%20Norte%20Recife!5e0!3m2!1spt-BR!2sbr!4v1698944543034!5m2!1spt-BR!2sbr"
-            width="250"
-            height="250"
-            style="border: 0; border-radius: 1rem"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-    </footer>
+    </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
