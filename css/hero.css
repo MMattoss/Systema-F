@@ -1,6 +1,5 @@
 #hero {
   height: 98vh;
-  padding: 0 6rem;
   position: relative;
 }
 
@@ -10,5 +9,12 @@
   line-height: 1.1;
   text-align: center;
   color: #0a1329;
-  padding: 2rem 4rem;
+  padding: 2rem 5rem;
+}
+
+@media (max-width: 768px) {
+    #hero-header {
+        font-size: 2em;
+        padding: 0;
+    }
 }

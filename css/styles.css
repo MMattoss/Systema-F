@@ -9,32 +9,12 @@ body {
   font-size: 16px;
 }
 
-header {
-  height: 100vh;
-  overflow: hidden;
-}
-
 nav {
   background-color: #2f4882;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-
 }
 
-
-
-/* ------------------ destaques ------------- */
-
-
-
-/* ---------- Features --------------- */
-
-
-
-/* --------------- Testimonials ---------------- */
-
-/* ------------ Form de contato ----------- */
-
-
-
-/* ------------ Footer ------------ */
-
+.website-container {
+  overflow: hidden;
+  width: 100%;
+}

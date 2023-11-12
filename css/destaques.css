@@ -1,6 +1,7 @@
 #destaques {
   background-color: #a3d140;
   color: #fff;
+  min-width: 100%;
 }
 
 .destaque-content {
