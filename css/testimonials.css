@@ -1,0 +1,23 @@
+#testimonials {
+  background-color: #1368d6;
+  min-height: 600px;
+}
+
+.testimonial-img {
+  width: 7%;
+}
+
+.testimonial-text {
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.testimonial-person {
+  color: #fff;
+}
+
+.carousel-content {
+  width: 80%;
+  height: 100%;
+}

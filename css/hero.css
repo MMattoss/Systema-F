@@ -1,0 +1,14 @@
+#hero {
+  height: 98vh;
+  padding: 0 6rem;
+  position: relative;
+}
+
+#hero-header {
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  color: #0a1329;
+  padding: 2rem 4rem;
+}

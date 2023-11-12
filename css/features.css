@@ -1,0 +1,28 @@
+.feature {
+    width: 100%;
+  }
+  
+  .feature-text h1 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  .feature-text p{
+    color: #919191;
+    font-size: 1.3em;
+  }
+  
+  #cadeado {
+    width: 80%;
+  }
+  
+  .feature:nth-child(2) {
+    background-color: #6199c7;
+    color: #FFF;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+  
+  .feature:nth-child(2) p {
+    color: #FFF;
+    font-weight: 300;
+  }

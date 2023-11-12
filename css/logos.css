@@ -1,0 +1,162 @@
+/* ----------- Nav logo ----------- */
+
+.f-illustration-nav {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2f4882;
+  outline: 2px solid #7cad11;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.lines-container-nav {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.line-nav {
+  background-color: #fff;
+}
+
+.line-nav:nth-child(1) {
+  position: absolute;
+  top: 25%;
+  height: 5px;
+  width: 100%;
+}
+
+.lines-container-nav > div:nth-child(2) {
+  width: 5px;
+  height: 80%;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  transform: rotate(-20deg);
+}
+
+.lines-container-nav > div:nth-child(3) {
+  height: 5px;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* ----------- Hero Logo ----------- */
+
+.logo {
+  position: relative;
+  margin-top: 50px;
+}
+
+.logo-header {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 4px 2px 1px #2f4882, 1px 1px 20px rgba(0, 0, 0, 1);
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.logo-subtext {
+  font-size: 50%;
+  display: block;
+  font-weight: 500;
+  color: #70914a;
+  letter-spacing: 5px;
+  text-shadow: none;
+}
+
+.logo-illustration {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #2f4882;
+  z-index: -1;
+  position: absolute;
+  bottom: -4%;
+  left: 75%;
+  outline: 5px solid #7cad11;
+  border: 3px solid #fff;
+  overflow: hidden;
+}
+
+.lines-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-line {
+  background-color: #fff;
+}
+
+.logo-line:nth-child(1) {
+  position: absolute;
+  bottom: 65%;
+  height: 20px;
+  width: 100%;
+}
+
+.logo-line:nth-child(2) {
+  width: 20px;
+  height: 120px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: rotate(-20deg);
+}
+
+.logo-line:nth-child(3) {
+  height: 20px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* ----------- Footer logo ----------- */
+
+.logo-footer {
+  width: 160px;
+  height: 160px;
+  border: 2px solid #fff;
+  outline: 2px solid #7cad11;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.lines-footer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.lines-footer > div {
+  background-color: #fff;
+}
+
+.lines-footer > div:nth-child(1) {
+  position: absolute;
+  bottom: 65%;
+  height: 20px;
+  width: 100%;
+}
+
+.lines-footer > div:nth-child(2) {
+  width: 20px;
+  height: 150px;
+  position: absolute;
+  top: 28%;
+  left: 49%;
+  transform: rotate(-20deg);
+}
+
+.lines-footer > div:nth-child(3) {
+  height: 20px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}

@@ -1,0 +1,26 @@
+footer {
+  background-color: #2f4882;
+  color: #fff;
+}
+
+#contact-info {
+  list-style: none;
+}
+
+#copyright {
+  color: #fff;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.footer-link {
+  color: #fff;
+}
+
+.socials {
+  width: 100%;
+}
+
+.social-icon {
+  color: #fff;
+}

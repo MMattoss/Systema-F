@@ -1,0 +1,14 @@
+#destaques {
+  background-color: #a3d140;
+  color: #fff;
+}
+
+.destaque-content {
+  background-color: #bbe266;
+  width: 100%;
+  height: 100%;
+}
+
+#destaques .row > div h3 {
+  font-size: 1.4em;
+}
