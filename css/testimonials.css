@@ -8,9 +8,9 @@
 }
 
 .testimonial-text {
-  font-weight: 300;
+  font-weight: 500;
   color: #fff;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
 }
 
 .testimonial-person {
