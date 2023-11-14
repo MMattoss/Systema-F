@@ -101,7 +101,7 @@
 
 .logo-line:nth-child(2) {
   width: 20px;
-  height: 120px;
+  height: 100%;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -159,4 +159,76 @@
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    margin-right: 100px;
+  }
+
+  .logo-header {
+    font-size: 2.5em;
+  }
+
+  .logo-illustration {
+    width: 130px;
+    height: 130px;
+    outline: 3px solid #7cad11;
+  }
+
+  .logo-line:nth-child(1) {
+    height: 15px;
+  }
+
+  .logo-line:nth-child(2) {
+    width: 15px;
+  }
+
+  .logo-line:nth-child(3) {
+    height: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo-header {
+    font-size: 4em;
+  }
+
+  .logo-illustration {
+    width: 200px;
+    height: 200px;
+    bottom: -5%;
+    left: 73%;
+  }
+
+  .f-illustration-nav {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .logo-header {
+    font-size: 5.3em;
+    text-shadow: 7px 4px 1px #2f4882, 4px 4px 20px rgba(0, 0, 0, 1);
+  }
+
+  .logo-illustration {
+    width: 250px;
+    height: 250px;
+    left: 77%;
+  }
+
+  .logo-line:nth-child(1) {
+    height: 30px;
+  }
+
+  .logo-line:nth-child(2) {
+    width: 30px;
+  }
+  .logo-line:nth-child(3) {
+    width: 400px;
+    height: 30px;
+    left: 45%;
+  }
 }
