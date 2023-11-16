@@ -7,7 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  padding-top: 60px;
+  padding-top: 100px;
   min-width: 375px;
   width: 100%;
 }
@@ -17,7 +17,7 @@ nav {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-.website-container {
+.website-wrapper {
   overflow: hidden;
   width: 100%;
 }
