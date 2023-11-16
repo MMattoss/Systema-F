@@ -11,6 +11,25 @@
   height: 100%;
 }
 
-#destaques .row > div h3 {
-  font-size: 1.4em;
+.destaque-title {
+  font-size: .9em;
+}
+
+@media (max-width: 768px) {
+  #destaques {
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .destaque-title {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 2000px) {
+
+  .destaque-title {
+    font-size: 2.4em;
+  }
 }

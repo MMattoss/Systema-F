@@ -19,6 +19,7 @@
 }
 
 @media (min-width: 768px) {
+  
   #hero-header {
     padding: 1rem 3rem;
   }
@@ -26,14 +27,14 @@
 
 @media (min-width: 1024px) {
   #hero-header {
-    font-size: 2.5em;
+    font-size: 2.3em;
     padding: 1rem 4rem;
   }
 }
 
 @media (min-width: 1440px) {
   #hero-header {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
 
