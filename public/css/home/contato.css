@@ -12,7 +12,7 @@ label {
   max-width: 80%;
 }
 
-#message {
+.message {
   resize: vertical;
   height: 100%;
   min-height: 100%;

@@ -304,6 +304,7 @@
           action="/send_email"
           method="post"
           class="row p-5 g-5 container-fluid d-none d-md-flex"
+          id="desktop-form"
         >
           <div class="col-xl-4 col-lg-4 d-flex flex-column gap-4">
             <h1 id="form-main-header">
@@ -318,7 +319,7 @@
           </div>
           <div class="col-xl-4 col-lg-4">
             <textarea
-              class="form-control rounded-4 p-3 fs-4"
+              class="form-control rounded-4 p-3 fs-4 message"
               placeholder="Sua menssagem"
               name="message"
               id="message"
@@ -364,7 +365,11 @@
               />
             </div>
 
-            <button type="submit" class="btn btn-lg btn-outline-primary">
+            <button
+              type="submit"
+              class="btn btn-lg btn-outline-primary"
+              id="submit-desktop"
+            >
               Enviar
             </button>
           </div>
@@ -373,10 +378,15 @@
         <form
           method="post"
           class="d-block d-md-none p-5 d-flex flex-column gap-3"
+          id="mobile-form"
         >
           <div class="form-header d-flex gap-2 align-items-center">
             <h3>Se interessou? Entre em contato com a gente!</h3>
-            <img src="../images/mail-1454731_1280.png" alt="" class="img-fluid" />
+            <img
+              src="../images/mail-1454731_1280.png"
+              alt=""
+              class="img-fluid"
+            />
           </div>
           <div class="data mb-4">
             <label for="fName" class="form-label d-block">Nome: </label>
@@ -384,7 +394,7 @@
               class="form-control w-100"
               type="text"
               name="fName"
-              id="fName"
+              id="fName-mobile"
             />
           </div>
           <div class="data mb-4">
@@ -393,7 +403,7 @@
               class="form-control w-100"
               type="text"
               name="lName"
-              id="lName"
+              id="lName-mobile"
             />
           </div>
           <div class="data mb-4">
@@ -402,7 +412,7 @@
               class="form-control w-100"
               type="email"
               name="email"
-              id="email"
+              id="email-mobile"
             />
           </div>
           <div class="data mb-4">
@@ -411,20 +421,24 @@
               class="form-control w-100"
               type="text"
               name="assunto"
-              id="assunto"
+              id="assunto-mobile"
             />
           </div>
 
           <textarea
-            class="form-control rounded-4 p-3 fs-4"
+            class="form-control rounded-4 p-3 fs-4 message"
             placeholder="Sua menssagem"
             name="message"
-            id="message"
+            id="message-mobile"
             cols="30"
             rows="10"
           ></textarea>
 
-          <button type="submit" class="btn btn-lg btn-outline-primary">
+          <button
+            type="submit"
+            class="btn btn-lg btn-outline-primary"
+            id="submit-mobile"
+          >
             Enviar
           </button>
         </form>
@@ -452,7 +466,9 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4 d-flex flex-column align-items-center gap-5">
+          <div
+            class="col-12 col-md-4 d-flex flex-column align-items-center gap-5"
+          >
             <div class="logo-footer">
               <div class="lines-footer">
                 <div></div>
@@ -504,5 +520,54 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $("#submit-desktop").click(() => {
+        const data = {
+          desktop: true,
+          fName: $("#fName").val(),
+          lName: $("#lName").val(),
+          subject: $("#assunto").val(),
+          email: $("#email").val(),
+          message: $("#message").val()
+        };
+
+        $.ajax({
+          type: "POST",
+          url: "/send_email",
+          contentType: "application/json",
+          data: JSON.stringify(data),
+          success: function (response) {
+            console.log(response.message);
+          },
+          error: function (error) {
+            console.error("Erro ao enviar dados para o servidor:", error);
+          },
+        });
+      });
+
+      $("#submit-mobile").click(() => {
+        const data = {
+          mobile: true,
+          lName: $("#lName-mobile").val(),
+          subject: $("#assunto-mobile").val(),
+          email: $("#email-mobile").val(),
+          message: $("#message-mobile").val()
+        };
+
+        $.ajax({
+          type: "POST",
+          url: "/send_email",
+          contentType: "application/json",
+          data: JSON.stringify(data),
+          success: function (response) {
+            console.log(response.message);
+          },
+          error: function (error) {
+            console.error("Erro ao enviar dados para o servidor:", error);
+          },
+        });
+      });
+    </script>
   </body>
 </html>
