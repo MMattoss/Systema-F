@@ -23,10 +23,18 @@ app.get("/Solucoes", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/pages/solucoes.html"));
 });
 
+app.get("/Sobre", (req, res)=> {
+  res.sendFile(path.join(__dirname, "/public/pages/sobre.html"));
+});
+
+// Submit form
 app.post("/send_email", (req, res) => {
   const formData = req.body;
-  const { fName, lName, subject, email, message } = formData;
-  const fullName = `${fName} ${lName}`;
+  const { fName, lName, assunto, email, message } = formData;
+  const info = `
+    Nome: ${fName} ${lName}\n
+    Email: ${email}\n
+    Mensagem: ${message}`;
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -39,8 +47,8 @@ app.post("/send_email", (req, res) => {
   const mailOptions = {
     from: email,
     to: "mateusmattosbarreto2000@gmail.com",
-    subject: subject,
-    text: message,
+    subject: assunto,
+    text: info,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -54,6 +62,6 @@ app.post("/send_email", (req, res) => {
 });
 
 // Initialize web server
-server.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log("Starting server on port: " + port);
 });

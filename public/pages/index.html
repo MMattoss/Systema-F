@@ -34,6 +34,7 @@
 
   <body>
     <div class="website-wrapper">
+
       <nav class="navbar navbar-expand-lg px-3 px-md-4 px-lg-5 fixed-top">
         <div class="container-fluid">
           <a href="/" class="logo-container navbar-brand">
@@ -63,7 +64,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
               <li class="nav-item mx-3">
-                <a href="#" class="nav-link">A Empresa</a>
+                <a href="/Sobre" class="nav-link">A Empresa</a>
               </li>
               <li class="nav-item mx-3">
                 <a href="/Solucoes" class="nav-link">Soluções</a>
@@ -300,6 +301,7 @@
       </section>
 
       <section id="contato">
+        <!-- Desktop view -->
         <form
           action="/send_email"
           method="post"
@@ -375,7 +377,9 @@
           </div>
         </form>
 
+        <!-- Mobile view -->
         <form
+          action="/send_email"
           method="post"
           class="d-block d-md-none p-5 d-flex flex-column gap-3"
           id="mobile-form"
@@ -521,6 +525,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Receber dados dos formulários de contato (mobile e desktop) -->
     <script>
       $("#submit-desktop").click(() => {
         const data = {
@@ -531,6 +536,8 @@
           email: $("#email").val(),
           message: $("#message").val()
         };
+
+        console.log(data);
 
         $.ajax({
           type: "POST",
@@ -554,6 +561,8 @@
           email: $("#email-mobile").val(),
           message: $("#message-mobile").val()
         };
+
+        console.log(data);
 
         $.ajax({
           type: "POST",
