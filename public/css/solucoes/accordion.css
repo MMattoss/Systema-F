@@ -41,3 +41,8 @@
 .accordion-button:active {
   background-color: #fff;
 }
+
+.bg-ocean-blue {
+    background-color: #1368d6;
+    color: #FFF;
+}
