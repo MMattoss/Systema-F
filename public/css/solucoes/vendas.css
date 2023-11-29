@@ -2,3 +2,33 @@
     background-color: #a3d140;
 }
 
+.vendas-main-header {
+    color: #FFF;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.card {
+    min-height: 550px;
+    box-shadow: 4px 10px 0px #5e7924;
+}
+
+.card-title {
+    color: #000;
+}
+
+.card-text {
+    color: #8a8a8a;
+}
+
+.fa-box, .fa-boxes-stacked {
+    color: #a8732d;
+}
+
+.fa-circle-check {
+    color: green;
+}
+
+.fa-receipt {
+    color: rgb(255, 217, 0);
+}
