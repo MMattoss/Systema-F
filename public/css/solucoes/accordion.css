@@ -1,0 +1,43 @@
+.accordion-title {
+  font-size: 2.8em;
+  line-height: 1.5;
+}
+
+.accordion-button {
+  font-size: 1em;
+}
+
+.accordion-header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.colored-span.ocean-blue {
+  color: #1368d6;
+}
+
+.colored-span.green {
+  color: #a3d140;
+}
+
+.colored-span.grayish-blue {
+  color: #6199c7;
+}
+
+.accordion-body {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: #8a8a8a;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: var(--bs-accordion-btn-color);
+}
+
+.accordion-button:link,
+.accordion-button:visited,
+.accordion-button:hover,
+.accordion-button:active {
+  background-color: #fff;
+}

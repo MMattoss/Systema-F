@@ -123,13 +123,33 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    text-align: center;
 }
 
 .carousel-text h1{
     font-size: 3em;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .carousel-text p {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.at-sign-1 {
+    color: #1368d6;
+}
+
+.at-sign-2 {
+    color: #a3d140;
+}
+
+.at-sign-3 {
+    color: #6199c7;
+}
+
+.at-sign-4 {
+    color: #8a8a8a;
 }
