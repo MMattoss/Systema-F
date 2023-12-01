@@ -1,0 +1,44 @@
+#treinamento {
+    min-height: 90vh;
+    position: relative;
+}
+
+.treinamento-bg-img {
+    background-image: url(../../images/suporte.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.treinamento-bg-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+.treinamento-main-header {
+    color: #FFF;
+    font-weight: 700;
+}
+
+.treinamento-description {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+#treinamento .btn-outline-primary {
+    color: #FFF;
+}
