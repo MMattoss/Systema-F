@@ -1,0 +1,39 @@
+#hero {
+  position: relative;
+  height: 95vh;
+}
+
+.bg-img-sobre {
+  background-image: url(../../images/bg-hero-sobre.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-img-sobre::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.hero-header-main {
+  color: #fff;
+  font-weight: 700;
+}
+
+.hero-header-secondary {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+}

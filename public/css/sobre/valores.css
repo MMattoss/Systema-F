@@ -1,0 +1,17 @@
+.card {
+    height: 250px;
+}
+
+#valores .row .col-md-4:nth-child(odd) .card h4 {
+    color: #a3d140;
+}
+
+#valores .row .col-md-4:nth-child(even) .card h4 {
+    color: #1368d6;
+}
+
+.card-text {
+    color: #8a8a8a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
