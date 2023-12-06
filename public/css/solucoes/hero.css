@@ -27,7 +27,7 @@
 }
 
 .carousel-item:nth-child(1) .bg-img {
-    background-image: url(../../images/fystema\ web\ 2.jpg);
+    background-image: url(../../images/bg-web.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,7 +39,7 @@
 }
 
 .carousel-item:nth-child(2) .bg-img {
-    background-image: url(../../images/fystema\ agro.jpg);
+    background-image: url(../../images/bg-agro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,7 +51,7 @@
 }
 
 .carousel-item:nth-child(3) .bg-img {
-    background-image: url(../../images/fystema\ vet.jpg);
+    background-image: url(../../images/bg-vet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -63,7 +63,7 @@
 }
 
 .carousel-item:nth-child(4) .bg-img {
-    background-image: url(../../images/doctor-doing-their-work-pediatrics-office.jpg);
+    background-image: url(../../images/bg-clinicas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
